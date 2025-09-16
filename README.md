@@ -6,6 +6,7 @@ Reason to use this over Google Places API is that this solution is free of charg
 This solution is only for IOs, as Android do not have free of charge service to get address suggesions.
 
 **[29.03.2021]** Implemented reverse geocoding, now you can reverse geocode coordinates.
+**[17.09.2025]** Fixed for new versions of React Native.
 
 ## Installation
 
