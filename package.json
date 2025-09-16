@@ -1,6 +1,6 @@
 {
   "name": "react-native-address-autocomplete",
-  "version": "0.4.1",
+  "version": "0.0.1",
   "description": "Autocomplete address natively without any API",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -35,13 +35,13 @@
     "react-native",
     "ios"
   ],
-  "repository": "https://github.com/davx1992/react-native-address-autocomplete",
-  "author": "davx1992 <davidsmurafa@gmail.com> (https://github.com/davx1992)",
+  "repository": "https://github.com/SAYri-ua/react-native-address-autocomplete",
+  "author": "SAYri-ua <sayri.ua@gmail.com> (https://github.com/SAYri-ua)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/davx1992/react-native-address-autocomplete/issues"
+    "url": "https://github.com/SAYri-ua/react-native-address-autocomplete/issues"
   },
-  "homepage": "https://github.com/davx1992/react-native-address-autocomplete#readme",
+  "homepage": "hhttps://github.com/SAYri-ua/react-native-address-autocomplete#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
