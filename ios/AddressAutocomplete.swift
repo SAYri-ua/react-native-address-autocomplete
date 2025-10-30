@@ -27,7 +27,12 @@ class AddressAutocomplete: NSObject, MKLocalSearchCompleterDelegate {
                              withRejecter reject: @escaping RCTPromiseRejectBlock) {
     suggestionsResolve = resolve
     suggestionsReject = reject
-    completer.queryFragment = address as String
+    let fragment = address as String
+
+    // MKLocalSearchCompleter expects query mutations on the main thread.
+    DispatchQueue.main.async { [weak self] in
+      self?.completer.queryFragment = fragment
+    }
   }
 
   // AddressAutocomplete.m:

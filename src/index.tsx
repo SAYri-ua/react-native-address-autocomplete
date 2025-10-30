@@ -22,6 +22,11 @@ export type ReverseGeocodeResult = {
   city: string;
 };
 
+export type AddressSuggestion = {
+  title: string;
+  subtitle: string;
+};
+
 const NativeAddressAutocomplete = NativeModules.AddressAutocomplete;
 const NativeGeocode = NativeModules.ReverseGeocode;
 
@@ -49,24 +54,28 @@ class AddressAutocomplete {
     return promise;
   };
 
-  static getAddressSuggestions = async (address: string): Promise<string[]> => {
-    const promise = new Promise<string[]>(async (resolve, reject) => {
-      if (Platform.OS === 'android') {
-        reject('Only IOs supported.');
-      }
-      if (address.length > 0) {
-        try {
-          const suggestions = await NativeAddressAutocomplete.getAddressSuggestions(
-            address
-          );
-          resolve(suggestions);
-        } catch (err) {
-          reject(err);
+  static getAddressSuggestions = async (
+    address: string
+  ): Promise<AddressSuggestion[]> => {
+    const promise = new Promise<AddressSuggestion[]>(
+      async (resolve, reject) => {
+        if (Platform.OS === 'android') {
+          reject('Only IOs supported.');
         }
-      } else {
-        reject('Address length should be greater than 0');
+        if (address.length > 0) {
+          try {
+            const suggestions = await NativeAddressAutocomplete.getAddressSuggestions(
+              address
+            );
+            resolve(suggestions);
+          } catch (err) {
+            reject(err);
+          }
+        } else {
+          reject('Address length should be greater than 0');
+        }
       }
-    });
+    );
     return promise;
   };
 

@@ -1,6 +1,6 @@
 {
   "name": "react-native-address-autocomplete",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Autocomplete address natively without any API",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -25,6 +25,7 @@
     "test": "jest",
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
+    "fix": "eslint --fix \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
     "release": "release-it",
     "example": "yarn --cwd example",
@@ -64,7 +65,7 @@
     "react-native": "0.63.4",
     "react-native-builder-bob": "^0.17.1",
     "release-it": "^14.2.2",
-    "typescript": "^4.1.3"
+    "typescript": "^5.9.2"
   },
   "peerDependencies": {
     "react": "*",
