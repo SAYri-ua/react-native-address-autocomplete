@@ -2,6 +2,8 @@ import { NativeModules, Platform } from 'react-native';
 
 export type AddressDetails = {
   title: string;
+  latitude: number;
+  longitude: number;
   coordinate: {
     latitude: number;
     longitude: number;
