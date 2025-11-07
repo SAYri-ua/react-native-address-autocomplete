@@ -4,3 +4,7 @@
 [debug] [2025-10-31T00:37:06.323Z] > authorizing via signed-in user (scalea@holdtech.tech)
 [debug] [2025-10-31T00:48:39.502Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
 [debug] [2025-10-31T00:48:39.503Z] > authorizing via signed-in user (scalea@holdtech.tech)
+[debug] [2025-10-31T10:24:51.418Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-31T10:24:51.420Z] > authorizing via signed-in user (scalea@holdtech.tech)
+[debug] [2025-11-07T17:15:52.514Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-11-07T17:15:52.515Z] > authorizing via signed-in user (scalea@holdtech.tech)
